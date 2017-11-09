@@ -1,4 +1,4 @@
 import re
-f = open(r'C:\TEMP\redata.txt', 'r')
+f = open(r'/home/mj/redata.txt', 'r')
 for line in f:
-    print(re.findall(r' (\d+:\d+:\d+) ', line)[0])
+    print(re.findall(r'::(\d+)-', line)[0])
