@@ -98,12 +98,25 @@ class Cisco(huawei):
 
 
 ###Cerd####
-mac = '1873'
+mac = '1fea'
 user = 'sbt-bedarev-ev'
 passwd = 'Qq123456!'
 ############################
-find = Cisco('172.29.110.5', user, passwd, mac)
-print(find.exec_cmd())
+# find = Cisco('172.29.110.5', user, passwd, mac)
+# print(find.exec_cmd())
+ip = ['172.29.110.5', '172.29.110.6']
+
+def ZD(ip):
+    for i in ip:
+        find = Cisco(i, user, passwd, mac)
+        respons = find.exec_cmd()
+        if 'nothing find' in respons:
+            pass
+        else:
+            print('On switch ' + i)
+            print(respons)
+            break
+ZD(ip)
 
 # find = huawei('172.29.110.22', user, passwd, mac)
 # respons = find.exec_cmd()
