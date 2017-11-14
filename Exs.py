@@ -2,7 +2,6 @@ from Exscript import Account
 from Exscript.protocols import ssh2
 import re,time
 
-acc = Account('sbt-bedarev-ev', 'Qq123456!')
 
 mac = '4fc9'
 
