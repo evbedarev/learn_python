@@ -1,5 +1,4 @@
 from tkinter import *
-import Port-sec
 
 
 class Application(Frame):
