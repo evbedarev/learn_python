@@ -1,8 +1,8 @@
 import paramiko
 
-host = '172.29.110.21'
-user = 'sbt-bedarev-ev'
-secret = 'Qq123456!'
+host = ''
+user = ''
+secret = ''
 port = 22
 
 client = paramiko.SSHClient()
