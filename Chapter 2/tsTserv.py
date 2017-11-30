@@ -18,7 +18,7 @@ while True:
             break
         print(data)
         tcpCliSock.send(bytes(str(ctime()) + ' ' + data.decode('utf-8'), 'utf-8'))
-        sleep(4)
+
     tcpCliSock.close()
 
-    tcpSerSock.close()
+tcpSerSock.close()
