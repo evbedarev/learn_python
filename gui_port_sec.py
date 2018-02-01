@@ -10,7 +10,7 @@ class Application(Frame):
         self.create_widgets()
 
     def create_widgets(self):
-        self.lbl_path_utc = Label(self, text='mac адресс ')
+
         self.lbl_path_utc.grid(row=2, column=0, columnspan=4, sticky=W)
         self.mac = Entry(self, width=55)
         self.mac.grid(row=3, column=0, columnspan=2, sticky=W)
