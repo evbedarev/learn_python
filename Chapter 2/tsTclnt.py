@@ -1,6 +1,6 @@
 from socket import *
-HOST = '172.29.98.0'
-PORT = 21566
+HOST = '127.0.0.1'
+PORT = 21567
 BUFSIZE = 1024
 ADDR = (HOST, PORT)
 tcpCliSock = socket(AF_INET, SOCK_STREAM)
