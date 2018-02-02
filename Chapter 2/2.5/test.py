@@ -1,2 +1,3 @@
-import os
-print(os.listdir(os.curdir))
+import socket
+
+print(socket.getservbyname('daytime'))
