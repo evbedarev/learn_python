@@ -14,8 +14,14 @@ def trace(func, handle, is_enable, sm_msg):
     @functools.wraps(func)
     def inner(*args, **kwargs):
         try:
+            # args = tuple(list(args).append(sm_msg))
+            args = list(args)
+            args.append(sm_msg)
+            args = tuple(args)
+
+            print(args)
             print(func.__name__, args, kwargs, file=handle)
-            return func(*args, sm_msg, **kwargs)
+            return func(*args, **kwargs)
         except Exception as e:
             print(e)
         finally:
